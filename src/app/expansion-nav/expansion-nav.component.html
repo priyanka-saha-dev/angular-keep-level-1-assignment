@@ -1,0 +1,45 @@
+<!-- <p>
+  expansion-nav works!
+</p> -->
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Take a Note
+    </mat-panel-title>
+    <!-- <mat-panel-description>
+      This is a summary of the content
+    </mat-panel-description> -->
+  </mat-expansion-panel-header>
+
+  <form class="note-form" [formGroup]="noteForm" (ngSubmit)="addNote(noteForm)">
+    <table cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field>
+            <input matInput placeholder="Enter your Note title" formControlName="title">
+            <mat-error *ngIf="noteForm.get('title').dirty && noteForm.get('title').hasError('required')"> Title cannot be blank</mat-error>
+
+            <mat-error *ngIf="noteForm.get('title').dirty && noteForm.get('title').hasError('minlength')"> Title must be of 6 characters</mat-error>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field>
+            <textarea matInput placeholder="Add Note description here..." formControlName="desc"></textarea>
+
+            <mat-error *ngIf="noteForm.get('desc').dirty && noteForm.get('desc').hasError('required')">Description cannot be blank</mat-error>
+            
+            <mat-error *ngIf="noteForm.get('desc').dirty && noteForm.get('desc').hasError('minlength')">Description must be of 2 characters</mat-error>
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+
+  </form>
+
+
+  <mat-action-row>
+    <button mat-button>Done</button>
+  </mat-action-row>
+</mat-expansion-panel>
