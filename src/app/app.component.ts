@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Note } from './note';
 import { NotesService } from './notes.service';
 
@@ -8,7 +8,7 @@ import { NotesService } from './notes.service';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   errMessage: string;
 
   public note: Note;
@@ -38,7 +38,6 @@ export class AppComponent {
 
   addNote() {
     console.log('Adding note : ', this.note);
-    
     console.log('title : ', this.note.title);
     console.log('text : ', this.note.text);
 
@@ -48,14 +47,11 @@ export class AppComponent {
       this.errMessage = 'Title and Text both are required fields';
     }
     this.noteSvc.addNote(this.note).subscribe(
-      response => console.log('Note added',response),
+      response => console.log('Note added', response),
       err => {
         console.log('error occured in addNotes in Svc', err);
         this.errMessage = err.message;
       }
     );
-
-
-
   }
 }

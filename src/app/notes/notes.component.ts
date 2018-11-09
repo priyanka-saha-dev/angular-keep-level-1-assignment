@@ -14,7 +14,7 @@ export class NotesComponent implements OnInit {
   public listOfNotes: Array<Note>;
   public noteForm: FormGroup;
 
-  //@Input('errMessage') errMessage: string;
+  // @Input('errMessage') errMessage: string;
   @Output() msg = new EventEmitter<string>();
 
   @ViewChild(FormGroupDirective) formDir: FormGroupDirective;

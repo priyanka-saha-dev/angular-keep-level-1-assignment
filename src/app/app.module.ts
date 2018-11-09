@@ -4,7 +4,13 @@ import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatAutocompleteModule, MatCheckboxModule, MatDatepickerModule, MatRadioModule, MatSelectModule, MatSliderModule, MatSlideToggleModule, MatMenuModule, MatDividerModule, MatStepperModule, MatTabsModule, MatButtonToggleModule, MatChipsModule, MatProgressSpinnerModule, MatProgressBarModule, MatDialogModule, MatSnackBarModule, MatTooltipModule, MatPaginatorModule, MatSortModule, MatTableModule } from '@angular/material';
+import { MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule } from '@angular/material';
+import { MatProgressBarModule, MatDialogModule, MatSnackBarModule, MatTooltipModule} from '@angular/material';
+import { MatPaginatorModule, MatSortModule, MatTableModule } from '@angular/material';
+import { MatAutocompleteModule, MatCheckboxModule, MatDatepickerModule, MatRadioModule, MatSelectModule } from '@angular/material';
+import { MatSliderModule, MatSlideToggleModule, MatMenuModule, MatDividerModule, MatStepperModule, MatTabsModule } from '@angular/material';
+import { MatButtonToggleModule, MatChipsModule, MatProgressSpinnerModule } from '@angular/material';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatExpansionModule } from '@angular/material/expansion';
