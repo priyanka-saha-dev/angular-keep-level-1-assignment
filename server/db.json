@@ -4,29 +4,6 @@
       "id": 1,
       "title": "Note 1",
       "text": "This the content of Note 1"
-    },
-    {
-      "id": 2,
-      "title": "Note 2",
-      "text": "This the content of Note 2"
-    },
-    {
-      "id": 3
-    },
-    {
-      "title": "Note 3",
-      "text": "Note Service Constructor\nnotes.component.ts:30 Initialising Note component - ngOnInit\ncore.js:3688 Angular is running in the development mode. Call enableProdMode() to enable the production mode.",
-      "id": 4
-    },
-    {
-      "title": "Note 4",
-      "text": "sdfghdfhbdvbsrdtfw5te dghfyhrt",
-      "id": 5
-    },
-    {
-      "title": "gdtg",
-      "text": "ertserte",
-      "id": 6
     }
   ]
 }
