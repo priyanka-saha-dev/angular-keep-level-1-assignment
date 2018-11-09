@@ -1,4 +1,5 @@
 export class Note {
+    public id: string;
     public title: string;
-    public desc: string;
+    public text: string;
 }

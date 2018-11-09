@@ -7,7 +7,7 @@ import { Note } from './note';
 export class NotesService {
 
   constructor(private httpClient: HttpClient) {
-    console.log("Note Service Constructor")
+    console.log('Note Service Constructor');
   }
 
   getNotes(): Observable<Array<Note>> {
@@ -15,7 +15,7 @@ export class NotesService {
   }
 
   addNote(note: Note): Observable<Note> {
-    return this.httpClient.post<Note>('http://localhost:3000/notes', note)
+    return this.httpClient.post<Note>('http://localhost:3000/notes', note);
   }
 
 }

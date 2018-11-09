@@ -13,15 +13,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
-import { ExpansionNavComponent } from './expansion-nav/expansion-nav.component';
-import { ContentCardComponent } from './content-card/content-card.component';
+import { NotesComponent } from './notes/notes.component';
+import { NotesService } from './notes.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ExpansionNavComponent,
-    ContentCardComponent
+    NotesComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +40,7 @@ import { ContentCardComponent } from './content-card/content-card.component';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [NotesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

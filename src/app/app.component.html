@@ -5,7 +5,8 @@
 <label class="error-message">{{ errMessage }}</label>
 
 <!-- To add notes -->
-<app-expansion-nav></app-expansion-nav>
+<!-- <app-expansion-nav></app-expansion-nav> -->
 
 <!-- Load and display the collection of notes from server as Material Cards with card title set to note title and card content set to note text  -->
-<app-content-card></app-content-card>
+<!-- <app-content-card></app-content-card> -->
+<app-notes (msg)="onError($event)"></app-notes>

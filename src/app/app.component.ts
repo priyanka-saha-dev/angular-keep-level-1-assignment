@@ -9,4 +9,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   errMessage: string;
 
+  onError(msg : string) {
+    console.log('Recieved msg : ', msg);
+    this.errMessage = msg;
+  }
 }
