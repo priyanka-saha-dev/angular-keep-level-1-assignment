@@ -18,14 +18,14 @@
                 <tr>
                     <td>
                         <mat-form-field>
-                            <input matInput placeholder="Enter your Note title" [(ngModel)]="note.title">
+                            <input name='title' matInput placeholder="Enter your Note title" [(ngModel)]="note.title">
                         </mat-form-field>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <mat-form-field>
-                            <textarea matInput placeholder="Add Note description here..." [(ngModel)]="note.text"></textarea>
+                            <textarea name='text' matInput placeholder="Add Note description here..." [(ngModel)]="note.text"></textarea>
                         </mat-form-field>
                     </td>
                 </tr>
